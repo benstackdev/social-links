@@ -1,7 +1,152 @@
-:root {}
+:root {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 14px;
 
+  --col-green: hsl(75, 94%, 57%);
+  --col-white: hsl(0, 0%, 100%);
+  --col-grey-700: hsl(0, 0%, 20%);
+  --col-grey-800: hsl(0, 0%, 12%);
+  --col-grey-900: hsl(0, 0%, 8%);
+
+  color: var(--col-white);
+}
+
+/* Reset */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+button {
+  appearance: none;
+  border: none;
+  background: none;
+}
+
+/* General styles */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+
+  background-color: var(--col-grey-900);
+}
+
+.socials-card {
+  background-color: var(--col-grey-800);
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-name {
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.profile-location {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--col-green);
+
+  margin-bottom: 1.5rem;
+}
+
+.profile-bio {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1.125rem;
+}
+
+.link-item {
+  width: 100%;
+}
+
+.link-item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: auto;
+
+  width: 100%;
+
+  padding: 1rem;
+
+  background-color: var(--col-grey-700);
+  color: var(--col-white);
+
+  border-radius: 0.5rem;
+
+  font-size: 1.125rem;
+  font-weight: 700;
+
+  transition: background-color 0.2s, color 0.2s;
+}
+
+
+.link-item a:hover {
+  background-color: var(--col-green);
+  color: var(--col-grey-900);
+
+  cursor: pointer;
+}
+
+/* Desktop styles */
+.socials-card {
+  width: 400px;
+
+  padding: 3rem;
+  border-radius: 1rem;
+  margin-top: -8rem;
+}
+
+.profile-photo {
+  width: 8rem;
+  aspect-ratio: auto;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+
+
+/* Mobile styles */
+@media (width < 600px) {
+  body {
+    margin: 2rem;
+  }
+
+  .socials-card {
+    padding: 2rem;
+    margin-top: -6rem;
+  }
+
+  .profile-photo {
+    width: 6rem;
+  }
 }
