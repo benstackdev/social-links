@@ -3,8 +3,9 @@
   font-optical-sizing: auto;
   font-size: 14px;
 
-  --col-green: hsl(75, 94%, 57%);
+  --col-green: hsl(124, 31%, 52%);
   --col-white: hsl(0, 0%, 100%);
+  --col-grey-400: hsl(0, 0%, 70%);
   --col-grey-700: hsl(0, 0%, 20%);
   --col-grey-800: hsl(0, 0%, 12%);
   --col-grey-900: hsl(0, 0%, 8%);
@@ -66,13 +67,19 @@ body {
   font-size: 1rem;
   font-weight: 600;
   color: var(--col-green);
+}
 
-  margin-bottom: 1.5rem;
+.profile-email {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+  color: var(--col-green);
 }
 
 .profile-bio {
   text-align: center;
-  margin-bottom: 2rem;
+  margin: 1rem 0;
+  color: var(--col-grey-400);
 }
 
 .links {
@@ -132,6 +139,14 @@ body {
   aspect-ratio: auto;
   border-radius: 50%;
   margin-bottom: 1.5rem;
+}
+
+.email {
+  padding: 1rem;
+}
+
+.email span {
+  font-weight: 500;
 }
 
 
